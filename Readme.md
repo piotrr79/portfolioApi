@@ -11,10 +11,13 @@ From project directory run `python3 manage.py makemigrations`, `python3 manage.p
 Rename file `env.sample` to `.env` and provide DB credentials there
 
 ## Run Api from Http:
-From project directory run `python3 manage.py runserver` and go to `http://127.0.0.1:8000/`
+From project directory (protfolio) run `python3 manage.py runserver` and go to `http://127.0.0.1:8000/`
 
 ## Create superuser for Admin:
-From project directory run: `python3 manage.py createsuperuser` and go to: `http://127.0.0.1:8000/admn`
+From project directory run: `python3 manage.py createsuperuser`
+
+## Generate Admin assets:
+From project directory run: `python3 manage.py collectstatic`, and change DEBUG to True in settings.py (for development only)
 
 ## Enter sample data:
 Log in to `http://127.0.0.1:8000/admn` and create some categories, items (blog) and info pages (articles)
