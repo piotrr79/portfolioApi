@@ -8,7 +8,7 @@ from portfolioApi.models import Article
 
 class ArticleItems(APIView):
     """
-    Contanct items,
+    ArticleItems class
     """
     
     permission_classes = (IsAuthenticated)
